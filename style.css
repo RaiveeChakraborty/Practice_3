@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+}
+nav{
+    height: 8vh;
+    width: 100vw;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3vw;
+}
+.nav-left div{
+    height: 2vh;
+    width: 2vh;
+    background-color: black;
+    border-radius: 50%;
+}
+.nav-right{
+    width: 40vw;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.nav-right h3{
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+.nav-right i{
+    display: none;
+}
+.subnav{
+    height: 8vh;
+    width: 100vw;
+    /* background-color: burlywood; */
+    
+}
+.subnav-contents{
+    width: 60vw;
+    height: 8vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.subnav h5{
+    font-size: 1vw;
+    font-weight: 500;
+}
+.landing-part1{
+    height: 35vh;
+    width: 100vw;
+    /* background-color: brown; */
+    display: flex;
+    flex-wrap: nowrap;
+   overflow-x: auto;
+   overflow-y: hidden;
+
+}
+.landing-part1::-webkit-scrollbar{
+    background-color: transparent;
+    height: 0.5vh;
+    /* width: 5vw; */
+}
+.landing-part1::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+.element{
+    height: 35vh;
+    width: 40vw;
+    /* background-color: rgb(154, 230, 154); */
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.element h5{
+    font-size: 6vw;
+    font-weight: lighter;
+}
+.landing-part2{
+    height: calc(100% - 51vh);
+    width: 100vw;
+    background-color: lightcoral;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.landing-part2::-webkit-scrollbar{
+    display: none;
+}
+.landing-part2 img{
+    height:100%;
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: 0 25%;
+}
+.landing-part2 img:nth-child(3){
+    object-position: 0 48%;
+}
+/* responsive */
+@media (max-width:600px){
+    nav{
+        height: 8vh;
+        width: 100vw;
+        /* background-color: aquamarine; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 3vw;
+        padding-left: 5vw;
+    }
+    .nav-left div{
+        height: 2vh;
+        width: 2vh;
+        background-color: black;
+        border-radius: 50%;
+    }
+    .nav-right{
+        width: 40vw;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+    }
+   
+    .nav-right h3{
+        font-size: 1.1vw;
+        font-weight: 500;
+        display: none;
+    }
+    /* .nav-right:nth-child(1){
+        display:initial;
+    } */
+     /* .nav-sp{
+        display: initial;
+     } */
+    .nav-right i{
+        display: initial;
+       margin-left: 20vw;
+    }
+   
+    .subnav{
+        height: 6vh;
+        width: 100vw;
+        background-color: burlywood;
+        
+    }
+    .subnav-contents{
+        width: 100vw;
+        height: 6vh;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .subnav h5{
+        font-size: 2.2vw;
+        font-weight: 500;
+        color: rgb(50, 50, 50);
+    }
+    .landing-part1{
+        height: 25vh;
+        width: 100vw;
+        /* background-color: brown; */
+        display: flex;
+        flex-wrap: nowrap;
+       overflow-x: auto;
+       overflow-y: hidden;
+    
+    }
+    .landing-part1::-webkit-scrollbar{
+        background-color: transparent;
+        height: 0.4vh;
+        /* width: 5vw; */
+    }
+    .landing-part1::-webkit-scrollbar-thumb{
+        background-color: orangered;
+    }
+    .element{
+        height: 25vh;
+        width: 80vw;
+        /* background-color: rgb(154, 230, 154); */
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .element h5{
+        font-size: 15vw;
+        font-weight: lighter;
+    }
+    .landing-part2{
+        height: calc(100% - 39vh);
+        width: 100vw;
+        background-color: lightcoral;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .landing-part2::-webkit-scrollbar{
+        display: none;
+    }
+    .landing-part2 img{
+        height:100%;
+        width: 100%;
+        flex-shrink: 0;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+}
